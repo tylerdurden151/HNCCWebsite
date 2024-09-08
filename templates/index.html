@@ -1,0 +1,102 @@
+<!--SDEV 300 6381
+Assignment: Lab 8
+Name: Timothy Eckart
+Date: 9 Jul 2024
+
+This html is a child page from based
+and to create the About page-->
+
+{% extends "based.html"  %}
+{% block title %} Home Page {% endblock %}
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+{% block content %}
+<!--This function is to display the HNCC photo-->
+<div class="jumbotron jumbotron-fluid" style="background-image: url('/static/image_HNCC.JPG'); height: 350px;
+background-size: cover; background-position: center top; background-repeat: no-repeat;">
+  <!--This function si to display the HNCC words on the image-->
+  <div class="container">
+      <h1 class="display-3" style="color: #FEFEFE; font-family: 'Times New Roman', Times, serif;"
+        >Host Nation Coordination Cell (HNCC)</h1>
+  </div>
+</div>
+<hr>
+  <div class="album py-5 bg-light">
+    <div class="container">
+<!--These are the Thumbnails for Contact and About pages-->
+      <div class="row">
+        <div class="col-md-4" >
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="/static/sandbags 2.jpg" width="100%"
+                 height="225" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                 aria-label="Placeholder: Thumbnail"><title>
+                Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+            <div class="card-body">
+              <p class="card-text">Click here to find out more information about our deployment Team</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-outline-secondary" href="/about">About </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" >
+            <img class="bd-placeholder-img card-img-top" src="/static/HNCC.jpg" width="100%"
+                 height="225" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                 aria-label="Placeholder: Thumbnail"><title>
+                Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+            <div class="card-body">
+              <p class="card-text">Click here to Find out how to contact us</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-outline-secondary" href="/contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        x<div class="col-md-4">
+          <div class="card mb-4 shadow-sm" >
+            <img class="bd-placeholder-img card-img-top" src="/static/plane.JPG" width="100%"
+                 height="225" xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                 aria-label="Placeholder: Thumbnail"><title>
+                Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+            <div class="card-body">
+              <p class="card-text">Click here to create an account</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-outline-secondary" href="/registration">Register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block time %}
+{% endblock %}

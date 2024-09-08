@@ -1,0 +1,59 @@
+<!--SDEV 300 6381
+Assignment: Lab 8
+Name: Timothy Eckart
+Date: 9 Jul 2024
+
+
+This html is a child page from based
+and to create the About page-->
+
+{% extends "based.html"  %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<h1> Welcome to the About page </h1>
+<!--An Unordered list of about HNCC Customs-->
+<ul class="list-group">
+  <li class="list-group-item active">Customs</li>
+  <li class="list-group-item">Responsible for all Cargo Clearance coming in
+      and out of Qatar borders in support of US Forces</li>
+  <li class="list-group-item">Liaison between Qatari Customs
+      Inspectors and US Forces</li>
+  <li class="list-group-item">Ensures all Qatari Customs directives are upheld
+      by the US Forces in order to maintain relationship with the Host Nation</li>
+</ul>
+<!--An Unordered list of about HNCC Immigrations-->
+<ul class="list-group">
+  <li class="list-group-item active">Immigrations</li>
+  <li class="list-group-item">Facilitate & Manage Immigrations & Emigrations
+        <ul>
+            <li> Aircrew, Military, DoD Civilians, Contractors, CSP Family Members,
+                USO Personnel, Other Govt Agency Personnel, Distinguished Visitors </li>
+        </ul>
+  </li>
+    <!--An Unordered list of about HNCC Passports-->
+   <li class="list-group-item">Passports & Residency
+        <ul>
+            <li> Issuance of Official & Tourist Passports </li>
+            <li> Official Visas </li>
+            <li> Qatari Residency for Permanent Party & CSP Families </li>
+        </ul>
+  </li>
+</ul>
+
+<!--An Unordered list of about HNCC Plans & Programs-->
+<ul class="list-group">
+  <li class="list-group-item active">Plans & Programs</li>
+  <li class="list-group-item">Coordinate all Qatari involvement and integration</li>
+  <li class="list-group-item">Coordinate with 379 AEW/XP Working Group</li>
+  <li class="list-group-item">Coordinate with GHQ</li>
+</ul>
+
+<!--An Unordered list of about HNCC Security-->
+<ul class="list-group">
+  <li class="list-group-item active">Security</li>
+  <li class="list-group-item">Maintain relationship with Qatari Ground
+      Security Wing to support AUAB missions</li>
+</ul>
+{% endblock %}
+{% block time %}
+{% endblock %}

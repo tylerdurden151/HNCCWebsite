@@ -1,0 +1,84 @@
+<!--SDEV 300 6381
+Assignment: Lab 8
+Name: Timothy Eckart
+Date: 9 Jul 2024
+
+
+This html is a child page from based
+and to create the contact page-->
+
+{% extends "based.html"  %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<h1> Welcome to the Contact page </h1>
+
+{% block FAQ %}
+<ol class="list-group">
+    <!-- This is the list for FAQ -->
+  <ol class="list-group-item active">FAQ</ol>
+  <li class="list-group-item">What items are prohibited when entering in country?
+        <ul>
+            <!--Here is a the numbered list-->
+            <li> Answer: Here is a list of items that are not allowed in country:
+            <ol>
+                <li> weapons </li>
+                <li>ammunition</li>
+                <li>explosive devices</li>
+            <li> knives greater than 6 inches</li>
+                <li>vapes, e-cigs, or vape juice</li>
+                <li> night vision googles</li>
+                <li> pornographic material</li>
+                <li> Any drugs or alcohol</li>
+                <li> Any gambling items (such as rolling dice or poker chips)</li>
+                <li> For more information please vist the Qatar tourist page:
+                    https://visitqatar.com/intl-en/about-qatar</li>
+                </ol>
+            </li>
+        </ul>
+  </li>
+    <!--Here is an Ordered list-->
+    <li class="list-group-item">What are the steps I need to do  when I enter the country?
+        <ul>
+            <li> Answer: Please follow these steps:
+            <ol>
+                <li>Depart off aircraft </li>
+                <li>Inprocess with PERSCO</li>
+                <li>Locate your baggage</li>
+            <li>Dispose of any prohibited items </li>
+                <li>Immigrate into country with HNCC</li>
+                <li>Your unit will pick you up from the termianl</li>
+                <li>Check in at Lodging (ie A6)</li>
+                <li>Setup Wifi with Babtel</li>
+                <li>Inspect your new living Qtrs</li>
+                <li>Finally, go to your assigned Newcomers briefing</li>
+                </ol>
+            </li>
+        </ul>
+  </li>
+  <li class="list-group-item"> What is the average temperature in Qatar?
+  <ul> Answer: 29 degrees Celsius (84.2 Farenheit) in the Winter months
+      and 40 degrees Celsius (104 Farenheit) in the summer  </ul>
+      <!-- External link display for winter and summer weather in Qatar-->
+      <ul> For more information please vist page:
+                    https://www.goal.com/en-qa/news/average-temperature-qatar-world-cup-
+          2022-months-how-players-stay-cool/blt5a1af7109884b1c4</ul>
+  </li>
+    <!-- External link display for HNCC-->
+    <li class="list-group-item"> Do you have any photos of Qatar?
+    <ul> Answer: Yes, please visit our USAF page for some notable achievements of our HNCC Team:
+    https://www.afcent.af.mil/News/Photos/igphoto/2000881265/</ul>
+    </li>
+</ol>
+{% endblock %}
+<hr>
+{% block Contact %}
+<!--Here is the Unordered list for contact information-->
+<ul class="list-group">
+  <li class="list-group-item active">Contact information</li>
+  <li class="list-group-item"> Phone number# 555-5555</li>
+  <li class="list-group-item">email: 379AEW.hn.customs@us.af.mil</li>
+</ul>
+{% endblock %}
+{% endblock %}
+{% block time %}
+{% endblock %}

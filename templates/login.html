@@ -1,0 +1,39 @@
+<!--SDEV 300 6381
+Assignment: Lab 8
+Name: Timothy Eckart
+Date: 9 Jul 2024
+
+This html is a child page from based
+and to create the About page-->
+
+{% extends "based.html"  %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<h1> Welcome to the Login page </h1>
+<!--Form to Log-in-->
+<form action="#" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <div> <a href="/registration" class="button"> Click here to create an account</a>
+  </div>
+</form>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
+{% block time %}
+{% endblock %}

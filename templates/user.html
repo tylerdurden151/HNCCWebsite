@@ -1,0 +1,29 @@
+<!--SDEV 300 6381
+Assignment: Lab 8
+Name: Timothy Eckart
+Date: 9 Jul 2024
+
+
+This html is a child page from based
+and to welcome the Users pages-->
+{% extends "based.html"  %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<h1> Welcome to the User page </h1>
+<!--Form to Registration for web access-->
+Hello {{ user }}<text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+<div class="btn btn-primary">
+        <a href="/update_password" role="button" style="color: white;">Update Password</a>
+    </div>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
+{% block time %}
+{% endblock %}

@@ -1,0 +1,50 @@
+<!--SDEV 300 6381
+Assignment: Lab 8
+Name: Timothy Eckart
+Date: 9 Jul 2024
+
+This html is a child page from based
+and to create the Registrations page-->
+
+{% extends "based.html"  %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<h1> Welcome to the Registration page </h1>
+<!--Form to Registration for web access-->
+<form action="/registration" method="POST">
+  <div class="input-group">
+  <span class="input-group-text">First name</span>
+  <input type="text" aria-label="First name" class="form-control" style="margin: 20px 0;">
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">Last name</span>
+  <input type="text" aria-label="Last name" class="form-control" style="margin: 20px 0;">
+  </div>
+  <div class="input-group mb-3">
+  <input name="user" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input name="server" class="form-control" placeholder="Server" aria-label="Server">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Enter your Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <!-- Error message-->
+  {% if error %}
+    <p>{{ error }}</p>
+{% endif %}
+</form>
+<!-- Flash message-->
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
+{% block time %}
+{% endblock %}
