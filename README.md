@@ -1,0 +1,1 @@
+Simple Full Stack Website, that uses Flask and MySQL. HNCC is the Host Nation Cordination Cell for Qatar and the website provided general information of their assigned role. The website provides user signup and log-in to access the website.
